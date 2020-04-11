@@ -12,11 +12,11 @@ func median(array []int) float64 {
 	return float64((array[len(array)/2] + array[len(array)/2-1])) / 2
 }
 
-func main() {
+func medianTask() {
 	var array1 []int = []int{6, 4, 2, 3, 5, 1} //Even amount of numbers
 	sort.Ints(array1)
-	fmt.Println(median(array1))
+	fmt.Println("Median for even number of elements: ", median(array1))
 	var array2 []int = []int{5, 0, 1, 4, 16} //Odd amount of numbers
 	sort.Ints(array2)
-	fmt.Print(median(array2))
+	fmt.Println("Median for odd number of elements: ", median(array2))
 }

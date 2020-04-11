@@ -26,7 +26,7 @@ func (s Square) Area() int {
 	return int(s.a * s.a)
 }
 
-func main() {
+func squareTask() {
 	s := Square{Point{1, 1}, 5}
 	fmt.Println(s.End())
 	fmt.Println(s.Perimeter())
