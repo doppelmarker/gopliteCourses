@@ -8,8 +8,7 @@ func average(array [6]int) float64 {
 	for _, elem := range array {
 		average += float64(elem)
 	}
-	average /= 6
-	return average
+	return average / 6
 }
 
 func arrayAverage() {

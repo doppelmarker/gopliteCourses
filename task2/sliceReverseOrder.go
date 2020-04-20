@@ -4,14 +4,11 @@ import "fmt"
 
 //reverse returns reversed copy of "slice"
 func reverse(slice []int64) []int64 {
-	var temp int64
 	c := make([]int64, len(slice))
 	copy(c, slice)
-	for i, k := 0, len(c)-1; i < len(c)/2; i++ {
-		temp = c[i]
-		c[i] = c[k]
-		c[k] = temp
-		k--
+	for i, j := 0, len(c)-1; i < j; i++ {
+		c[i], c[j] = c[j], c[i]
+		j--
 	}
 	return c
 }
